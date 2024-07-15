@@ -122,6 +122,7 @@ export class FileImporter extends Component {
                         path: file.path,
                         stat: file.stat,
                     } as PDFImport);
+										break;
                 }
             }
         } catch (ex) {
