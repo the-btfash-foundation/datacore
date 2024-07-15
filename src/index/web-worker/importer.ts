@@ -2,7 +2,7 @@
 
 import ImportWorker from "index/web-worker/importer.worker";
 import { Component, FileManager, MetadataCache, TFile, Vault } from "obsidian";
-import { CanvasImport, MarkdownImport } from "index/web-worker/message";
+import { CanvasImport, MarkdownImport, PDFImport } from "index/web-worker/message";
 import { Deferred, deferred } from "utils/deferred";
 
 import { Queue } from "@datastructures-js/queue";
@@ -114,6 +114,14 @@ export class FileImporter extends Component {
                         },
                     } as CanvasImport);
                     break;
+                }
+                case "pdf": {
+                    worker!.worker.postMessage({
+                        type: "pdf",
+                        resourceURI: this.vault.getResourcePath(file),
+                        path: file.path,
+                        stat: file.stat,
+                    } as PDFImport);
                 }
             }
         } catch (ex) {
