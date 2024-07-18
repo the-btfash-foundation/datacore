@@ -23,7 +23,8 @@
     "lib": ["dom", "es5", "scripthost", "es2018", "DOM.Iterable"],
 		"paths": {
       "react": ["preact/compat"],
-      "react-dom": ["preact/compat"]
+      "react-dom": ["preact/compat"],
+      "pdfjs-dist": ["@the-tablet/pdfjs-ext-dist"]
     }
   },
   "include": ["src/main.ts", "src/index.ts", "src/typings/*.d.ts", "src/test/**/*.ts", "src/test/**/*.tsx"],
