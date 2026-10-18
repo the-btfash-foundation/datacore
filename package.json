@@ -1,5 +1,5 @@
 {
-  "name": "@blacksmithgu/datacore",
+  "name": "@btfash/datacore",
   "version": "0.1.28",
   "description": "Reactive data engine for Obsidian.md.",
   "main": "build/library/index.js",
