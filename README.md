@@ -66,6 +66,6 @@ yarn run test
 
 ## Contributing
 
-**Discord**: <https://discord.gg/KwZUX4BYba>.
+**Discord**: <https://discord.gg/KrgFXP63Dy>.
 
 Contributions are welcome; for any contributions beyond bug fixes, we recommend reaching out via email or discord to make sure what you are trying to implement is reasonable / feasible!
